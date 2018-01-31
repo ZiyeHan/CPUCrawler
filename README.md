@@ -25,4 +25,10 @@ First thing first, I will crawl all the performance score for each CPU, and stor
 
 Then I will crawl all the CPU names and their released dates, and store it in two different .csv files.
 
+Next step, make a matching algorithm, group CPU name and CPU score by date (year and month). For those CPUs that can't be matched, I haven't decided how to deal with them: <br>
+Plan 1: Search it on another website? <br>
+Plan 2: Find it manually? (If not too much)
+
+
+
 <br>
