@@ -30,5 +30,3 @@ public class DesktopGeekbenchCrawler extends AbstractGeekbenchCrawler {
     }
 
 }
-
-

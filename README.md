@@ -21,7 +21,8 @@ Problem2:
 There are too much data.
 
 ## My Plan
-First thing first, I will crawl all the performance score for each CPU, and store it in a .csv file.
+First thing first, I will crawl all the performance score for each CPU, and store it in two different .csv files.
 
+Then I will crawl all the CPU names and their released dates, and store it in two different .csv files.
 
 <br>
