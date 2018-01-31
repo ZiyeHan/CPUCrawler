@@ -1,37 +1,32 @@
 package com.chris.cpu.crawler;
 
-
 import com.chris.cpu.common.PageConstants;
-import com.chris.cpu.util.DriverUtil;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import java.util.HashMap;
+import java.util.List;
 
-public class DesktopGeekbenchCrawler {
+public class DesktopGeekbenchCrawler extends AbstractGeekbenchCrawler {
 
-    private WebDriver driver;
-
-    private HashMap<String, String> crawlResult;
-
-    public HashMap<String, String> crawlGeekbench() {
-        initiateDriver();
-        openPage();
-        crawlResult = crawlTarget();
-        return crawlResult;
-    }
-
-    private void initiateDriver() {
-        driver = DriverUtil.initiateDriver(driver);
-    }
-
-    private void openPage() {
+    @Override
+    protected void openPage() {
         driver.get(PageConstants.GEEKBENCH_DESKTOP);
     }
 
-    private HashMap<String, String> crawlTarget() {
-
-        return new HashMap<String, String>();
-
-
+    @Override
+    protected HashMap<String, String> crawlTarget() {
+        crawlResult = new HashMap<String, String>();
+        System.out.println("Crawling desktop geekbench...");
+        List<WebElement> allCPUs = driver.findElements(By.xpath("//*[@id=\"pc\"]/tbody/tr"));
+        for(WebElement cpu: allCPUs){
+            String cpuName = cpu.findElement(By.xpath(".//td[1]/a")).getText();
+            String cpuBenchscore = cpu.findElement(By.xpath(".//td[2]")).getText();
+            if(cpuName.equals("")){  //There are some extra empty records, which I don't need
+                break;
+            }
+            crawlResult.put(cpuName, cpuBenchscore);
+        }
+        return crawlResult;
     }
 
 }
