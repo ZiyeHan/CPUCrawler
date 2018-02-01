@@ -1,20 +1,26 @@
 package com.chris.cpu.processor;
 
 
+import com.chris.cpu.common.FileConstants;
 import com.chris.cpu.crawler.AbstractReleaseDateCrawler;
+import com.chris.cpu.crawler.DesktopReleaseDateCrawler;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.Map;
+import java.util.*;
+
 
 public class ReleaseDateDataStorage {
 
-    public void storeData(String filePath, AbstractReleaseDateCrawler abstractReleaseDateCrawler){
-        Map<String, String> releaseData = abstractReleaseDateCrawler.crawlReleaseDate(2012, 2017);
+    public void storeData(String sourceFilePath, String destinationfilePath, AbstractReleaseDateCrawler abstractReleaseDateCrawler){
+        Set<String> cpuNames = getBenchmarkCpuNames(sourceFilePath);
+        Map<String, String> releaseDate = abstractReleaseDateCrawler.crawlReleaseDate(cpuNames);
         try{
-            FileWriter fileStream = new FileWriter(filePath);
+            FileWriter fileStream = new FileWriter(destinationfilePath);
             BufferedWriter out = new BufferedWriter(fileStream);
-            for(Map.Entry<String, String> data: releaseData.entrySet()){
+            for(Map.Entry<String, String> data: releaseDate.entrySet()){
                 out.write(data.getKey() + "," + data.getValue() + "\n");
             }
             out.close();
@@ -22,5 +28,28 @@ public class ReleaseDateDataStorage {
             e.printStackTrace();
         }
     }
+
+    private Set<String> getBenchmarkCpuNames(String sourceFilePath){
+        Set<String> cpuNames = new HashSet<String>();
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(sourceFilePath));
+            String line = null;
+            while ((line = bufferedReader.readLine()) != null) {
+                String benchInfo[] = line.split(",");
+                cpuNames.add(benchInfo[0]);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return cpuNames;
+    }
+
+
+    public static void main(String[] args){
+        ReleaseDateDataStorage r = new ReleaseDateDataStorage();
+        r.storeData(FileConstants.GEEKBENCH_DESKTOP_SINGLECORE_FILEPATH, FileConstants.RELEASE_DATE_DESKTOP_SINGLECORE_FILEPATH, new DesktopReleaseDateCrawler());
+    }
+
+
 
 }
