@@ -1,9 +1,7 @@
 package com.chris.cpu.processor;
 
 
-import com.chris.cpu.common.FileConstants;
 import com.chris.cpu.crawler.AbstractReleaseDateCrawler;
-import com.chris.cpu.crawler.DesktopReleaseDateCrawler;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -43,13 +41,6 @@ public class ReleaseDateDataStorage {
         }
         return cpuNames;
     }
-
-
-    public static void main(String[] args){
-        ReleaseDateDataStorage r = new ReleaseDateDataStorage();
-        r.storeData(FileConstants.GEEKBENCH_DESKTOP_SINGLECORE_FILEPATH, FileConstants.RELEASE_DATE_DESKTOP_SINGLECORE_FILEPATH, new DesktopReleaseDateCrawler());
-    }
-
 
 
 }

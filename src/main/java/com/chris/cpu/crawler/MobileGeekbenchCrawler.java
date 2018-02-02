@@ -1,7 +1,9 @@
 package com.chris.cpu.crawler;
 
 import com.chris.cpu.common.PageConstants;
+import com.chris.cpu.enums.CoreEnum;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +19,7 @@ public class MobileGeekbenchCrawler extends AbstractGeekbenchCrawler{
     protected HashMap<String, String> crawlTarget() {
         crawlResult = new HashMap<String, String>();
         System.out.println("Crawling mobile geekbench...");
-
+        chooseCore(driver, CoreEnum.MULTI_CORE); //Choose multi core
         List<WebElement> allCPUs = driver.findElements(By.xpath("//*[@id=\"android\"]/tbody/tr"));
         for(WebElement cpu: allCPUs){
             String fullCPUName = cpu.findElement(By.xpath(".//td[1]/div[2]")).getText();
@@ -33,4 +35,10 @@ public class MobileGeekbenchCrawler extends AbstractGeekbenchCrawler{
         }
         return crawlResult;
     }
+
+    private void chooseCore(WebDriver driver, CoreEnum coreEnum){
+        WebElement tab = driver.findElement(By.cssSelector("a[href=\"" + coreEnum.getCoreOption() + "\"]"));
+        tab.click();
+    }
+
 }

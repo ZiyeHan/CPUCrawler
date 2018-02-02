@@ -21,12 +21,13 @@ public abstract class AbstractReleaseDateCrawler {
         initiateDriver();
         for (String cpuName : cpuNames) {
             openPage(cpuName);
-            try {
-                driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+//            try {
+//                driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
                 crawlResult = crawlTarget(cpuName, crawlResult);
-            }catch(TimeoutException e){
-                e.printStackTrace();
-            }
+//            }catch(TimeoutException e){
+//                System.out.println(cpuName + " time out");
+//                continue;
+//            }
         }
         return crawlResult;
 
