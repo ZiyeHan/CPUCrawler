@@ -20,12 +20,12 @@ Intel Core 2 Duo U7500,S1 2009
 AMD Ryzen Threadripper 1920X,S1 2017
 Intel Xeon E3110,S2 2008
 Intel Core i3-2357M,S1 2011
-Intel Core i3-4150,S1 2014
 Intel Xeon E5530,S1 2009
+Intel Core i3-4150,S1 2014
 Intel Core i7-4790T,S1 2014
 Intel Core i5-4300U,S1 2013
-Intel Core i7-4790S,S1 2014
 Intel Xeon E5-2686 v4,S2 2016
+Intel Core i7-4790S,S1 2014
 Intel Xeon E5-2686 v3,S1 2015
 Intel Core i7-2675QM,S1 2011
 Intel Core 2 Extreme X9770,S2 2008
@@ -38,14 +38,14 @@ Intel Xeon E3-1225,S1 2017
 Intel Core 2 Duo E4400,S2 2008
 AMD Athlon II X2 215,S1 2009
 Intel Core i5-3450S,S1 2012
-Intel Core i5-4300Y,S1 2013
 AMD Phenom II X4 945,S1 2009
+Intel Core i5-4300Y,S1 2013
 Intel Core i3-6320,S2 2015
-Intel Xeon E3-1220,S2 2017
 Intel Xeon E5-2640 v2,S1 2014
+Intel Xeon E3-1220,S2 2017
 Intel Core 2 Quad Q8400,S1 2009
-Intel Core i7-4790K,S1 2014
 Intel Xeon E5-2640 v3,S1 2014
+Intel Core i7-4790K,S1 2014
 Intel Xeon E5520,S1 2009
 Intel Xeon E5-2640 v4,S1 2016
 Intel Xeon E5-2687W v2,S1 2013
@@ -91,8 +91,8 @@ Intel Pentium G3220T,S1 2014
 Intel Core i7-2960XM,S2 2011
 Intel Core i3-4160,S1 2014
 Intel Xeon E5504,S1 2009
-Intel Core i3-6100,S2 2015
 Intel Xeon E3-1240,S1 2017
+Intel Core i3-6100,S2 2015
 Intel Core i5-3230M,S1 2013
 Intel Xeon E3-1245,S1 2017
 AMD FX-4300,S2 2012
@@ -187,8 +187,8 @@ AMD Athlon X4 760K,S1 2013
 AMD A8-7100,S1 2014
 Intel Core i3-4130,S1 2013
 Intel Core i5-3320M,S1 2012
-Intel Core i3-4370,S1 2014
 Intel Core i7-6820HQ,S2 2015
+Intel Core i3-4370,S1 2014
 Intel Core i5-3570,S1 2012
 Intel Core i3-2377M,S1 2012
 Intel Core i5-3330,S2 2012
@@ -221,8 +221,8 @@ Intel Core i3-7100U,S2 2016
 Intel Core i5-2540M,S2 2010
 Intel Xeon E3-1270 v5,S2 2015
 Intel Core i7-7800X,S1 2017
-AMD A6-6400K,S1 2013
 Intel Core 2 Quad Q9100,S1 2009
+AMD A6-6400K,S1 2013
 Intel Pentium 2129Y,S1 2014
 Intel Core i7-970,S1 2010
 AMD Athlon II X4 610e,S1 2010
@@ -236,8 +236,8 @@ Intel Core i7-7920HQ,S1 2017
 Intel Xeon W5590,S1 2009
 Intel Pentium B950,S1 2011
 Intel Core i5-4440,S1 2013
-AMD A6-5357M,S2 2013
 AMD Phenom X3 8600B,S1 2008
+AMD A6-5357M,S2 2013
 Intel Core i7-3770T,S1 2012
 Intel Core i7-3770S,S1 2012
 AMD A4-3320M,S1 2012
@@ -322,11 +322,11 @@ Intel Core i3-330UM,S1 2010
 Intel Core i7-940,S2 2008
 Intel Core i7-4750HQ,S1 2013
 Intel Core i7-7700,S2 2016
-Intel Core i7-5700HQ,S1 2015
 Intel Xeon E3-1230V2,S1 2012
+Intel Core i7-5700HQ,S1 2015
 Intel Xeon E5-2623 v3,S1 2015
-Intel Core i3-2312M,S1 2012
 Intel Xeon X5355,S1 2009
+Intel Core i3-2312M,S1 2012
 AMD FX-8310,S2 2014
 Intel Xeon E3-1270,S1 2017
 Intel Atom D2550,S1 2012
@@ -335,8 +335,8 @@ Intel Pentium 4 550/551,S1 2004
 Intel Atom 230,S1 2009
 Intel Core 2 Duo P9400,S1 2009
 Intel Celeron N2820,S1 2014
-AMD Athlon 64 X2 5400+,S2 2008
 Intel Atom C2750,S1 2014
+AMD Athlon 64 X2 5400+,S2 2008
 Intel Core i7-950,S1 2009
 Intel Core 2 Duo E7300,S2 2008
 Intel Celeron N2815,S1 2014
@@ -430,16 +430,16 @@ Intel Core i7-2677M,S1 2011
 Intel Xeon E5-2640,S1 2016
 Intel Core 2 Duo T7250,S1 2009
 Intel Celeron 430,S1 2009
-Intel Core i7-4700EQ,S1 2013
 Intel Xeon E5-2680 v2,S1 2013
-Intel Core i5-7200U,S2 2016
+Intel Core i7-4700EQ,S1 2013
 Intel Xeon E5-2680 v3,S2 2014
+Intel Core i5-7200U,S2 2016
 Intel Xeon E5-2680 v4,S1 2016
 Intel Core i7-3720QM,S1 2012
-Intel Core i5-5350U,S1 2015
 Intel Xeon E5-2643,S1 2015
-Intel Core 2 Duo T8100,S2 2008
+Intel Core i5-5350U,S1 2015
 AMD A6-6310,S1 2014
+Intel Core 2 Duo T8100,S2 2008
 Intel Xeon E3-1280 v3,S1 2013
 Intel Core 2 Duo E8300,S2 2008
 AMD E1-7010,S1 2016
@@ -472,8 +472,8 @@ AMD Ryzen 5 1400,S1 2017
 Intel Xeon E5-2609 v3,S2 2014
 Intel Xeon E5-2609 v2,S1 2014
 Intel Core 2 Duo P8700,S1 2009
-Intel Pentium G3420,S1 2013
 AMD Phenom II X4 B95,S1 2010
+Intel Pentium G3420,S1 2013
 Intel Xeon E5-2620,S1 2016
 AMD Phenom II X4 B97,S1 2010
 Intel Celeron 450,S1 2009
@@ -495,8 +495,8 @@ Intel Xeon E5-2620 v2,S1 2013
 Intel Pentium 2127U,S1 2013
 Intel Xeon E5-2609,S1 2016
 Intel Xeon E3-1276 v3,S1 2014
-Intel Core i3-5020U,S1 2015
 Intel Xeon X3440,S2 2009
+Intel Core i3-5020U,S1 2015
 Intel Xeon E3-1220 v3,S1 2011
 Intel Xeon E3-1220 v2,S1 2012
 AMD A8-3530MX,S1 2011
@@ -541,8 +541,8 @@ Intel Pentium G2130,S1 2013
 Intel Xeon E5-2660 v2,S1 2014
 Intel Celeron G555,S1 2012
 Intel Core 2 Duo U9400,S1 2009
-AMD A10-6790K,S2 2013
 AMD A10-9700,S2 2016
+AMD A10-6790K,S2 2013
 Intel Core i5-2390T,S1 2011
 AMD Athlon II X2 280,S1 2013
 Intel Celeron E3200,S1 2009
@@ -575,8 +575,8 @@ Intel Xeon E5-2637 v4,S1 2016
 Intel Pentium E5800,S1 2012
 Intel Xeon E5-1650 v4,S1 2016
 Intel Xeon E5-1650 v3,S2 2014
-Intel Core i5-5575R,S2 2015
 Intel Xeon E5-1650 v2,S1 2013
+Intel Core i5-5575R,S2 2015
 Intel Pentium 2030M,S2 2013
 Intel Core i5-5200U,S2 2014
 Intel Pentium 997,S2 2012
@@ -612,14 +612,14 @@ AMD A6-1450,S1 2013
 Intel Core i3-3130M,S1 2013
 Intel Core 2 Duo T9400,S1 2009
 Intel Xeon E5-2650 v4,S1 2016
-Intel Core 2 Duo E4600,S2 2008
 Intel Atom x5-Z8300,S1 2015
+Intel Core 2 Duo E4600,S2 2008
 Intel Core i5-3350P,S2 2012
 Intel Pentium G3260,S1 2015
 Intel Core i7-6660U,S1 2016
 Intel Pentium N3510,S2 2013
-Intel Xeon E3-1265L v3,S1 2012
 Intel Core i7-2700K,S2 2011
+Intel Xeon E3-1265L v3,S1 2012
 Intel Xeon E3-1265L v2,S1 2012
 Intel Celeron G530,S1 2011
 Intel Core i7-3740QM,S1 2012
@@ -633,8 +633,8 @@ Intel Core i5-4590T,S1 2014
 AMD A6-3620,S1 2012
 Intel Xeon E3-1240 v3,S1 2013
 AMD Ryzen 5 1500X,S1 2017
-Intel Core i5-4590S,S1 2014
 Intel Xeon E3-1240 v2,S1 2012
+Intel Core i5-4590S,S1 2014
 Intel Xeon E3-1240 v5,S2 2015
 Intel Core i3-4000M,S1 2013
 Intel Core M-5Y51,S1 2015
@@ -644,8 +644,8 @@ Intel Celeron N3350,S2 2016
 Intel Pentium D 840/935/940,S1 2005
 Intel Core i5-4288U,S1 2013
 AMD A6-3650,S1 2011
-Intel Celeron G540,S2 2011
 Intel Core i3-2370M,S1 2012
+Intel Celeron G540,S2 2011
 AMD Phenom II X2 555 Black Edition,S1 2010
 Intel Core 2 Duo T7200,S1 2007
 AMD Phenom II X4 B25,S2 2009
@@ -677,15 +677,15 @@ Intel Pentium 967,S1 2012
 Intel Pentium G2030T,S1 2014
 AMD Phenom II X4 805,S1 2009
 Intel Xeon E5649,S1 2011
-Intel Core i5-4202Y,S1 2014
 Intel Celeron N3450,S2 2016
+Intel Core i5-4202Y,S1 2014
 Intel Core 2 Duo P9300,S1 2009
 Intel Celeron 1017U,S1 2013
 Intel Core i5-2310,S1 2011
 AMD Phenom II X4 965 Black Edition,S1 2009
 Intel Xeon E5-2697 v4,S1 2016
-Intel Core i3-7300,S1 2017
 Intel Xeon E5-2697 v3,S1 2014
+Intel Core i3-7300,S1 2017
 Intel Core i5-3330S,S1 2012
 Intel Pentium T2370,S2 2008
 Intel Pentium 4 519K/524,S2 2004
@@ -716,8 +716,8 @@ AMD A8-7410,S1 2015
 Intel Xeon E5645,S1 2011
 AMD Athlon X2 5400B,S1 2008
 AMD Phenom II X4 820,S2 2009
-Intel Core i7-6567U,S1 2016
 Intel Xeon E5640,S1 2010
+Intel Core i7-6567U,S1 2016
 Intel Atom x7-Z8700,S1 2015
 AMD Athlon II X2 B24,S1 2010
 AMD E-350,S2 2012
@@ -760,11 +760,11 @@ Intel Pentium P6000,S1 2010
 Intel Core i7-4720HQ,S2 2014
 Intel Xeon E5606,S1 2011
 AMD A8-6600K,S1 2013
-Intel Pentium 3825U,S1 2015
 Intel Core i7-740QM,S1 2010
+Intel Pentium 3825U,S1 2015
 AMD Phenom II X3 P840,S2 2010
-AMD A4-7300,S1 2014
 AMD Phenom II X2 560 Black Edition,S2 2010
+AMD A4-7300,S1 2014
 Intel Core 2 Duo T9800,S1 2009
 Intel Core 2 Duo E7600,S1 2009
 AMD A4-4020,S1 2014
@@ -889,8 +889,8 @@ Intel Celeron T3100,S2 2008
 Intel Xeon E5-2643 v4,S1 2016
 Intel Core i7-980X,S1 2010
 AMD FX-6200,S1 2012
-Intel Core 2 Duo P7550,S1 2009
 AMD Phenom II X3 N830,S1 2010
+Intel Core 2 Duo P7550,S1 2009
 Intel Core 2 Duo P8400,S2 2008
 Intel Core i7-640UM,S1 2010
 Intel Xeon E3-1246 v3,S1 2014
@@ -919,8 +919,8 @@ AMD Athlon II P340,S2 2010
 Intel Core i5-655K,S1 2010
 Intel Core i3-7100,S1 2017
 Intel Core i7-4765T,S1 2013
-Intel Core i5-3427U,S1 2012
 AMD A8-7600,S1 2014
+Intel Core i5-3427U,S1 2012
 AMD A8-3510MX,S1 2011
 Intel Core i5-520M,S1 2010
 Intel Core i7-7700K,S2 2016
@@ -930,8 +930,8 @@ AMD Sempron SI-42,S1 2009
 AMD Athlon II X2 260u,S2 2010
 Intel Celeron E1500,S1 2009
 AMD Phenom II X6 1100T Black Edition,S2 2010
-Intel Core i7-4860HQ,S1 2014
 Intel Core i7-4960X,S1 2013
+Intel Core i7-4860HQ,S1 2014
 Intel Core 2 Duo T5850,S1 2009
 Intel Core 2 Duo P7570,S2 2009
 AMD Athlon X2 5050e,S2 2008
@@ -968,8 +968,8 @@ Intel Core 2 Duo E8500,S2 2008
 Intel Celeron N2930,S1 2014
 Intel Core i5-3339Y,S1 2013
 Intel Xeon E5-2690 v2,S1 2013
-Intel Xeon E5-2667 v4,S1 2016
 Intel Xeon E5-2690 v3,S1 2014
+Intel Xeon E5-2667 v4,S1 2016
 Intel Xeon X5690,S1 2011
 Intel Core 2 Duo E6320,S1 2007
 Intel Xeon E5-2667 v2,S1 2014
@@ -1049,14 +1049,14 @@ Intel Core i7-4770,S1 2013
 Intel Xeon W3550,S1 2009
 Intel Celeron P4500,S1 2010
 Intel Core i7-6800K,S1 2016
-Intel Core i7-7560U,S1 2017
 Intel Xeon E3-1535M v5,S2 2015
 Intel Core i7-3610QM,S1 2012
+Intel Core i7-7560U,S1 2017
 Intel Core i3-4010U,S1 2013
 AMD Athlon II X4 620,S1 2009
 Intel Core i7-3970X,S1 2012
-Intel Celeron G1630,S2 2013
 Intel Xeon X3350,S2 2008
+Intel Celeron G1630,S2 2013
 AMD A8-3870,S2 2011
 Intel Core i7-2640M,S2 2011
 Intel Xeon E5-1660,S2 2016
@@ -1131,8 +1131,8 @@ Intel Core i5-4278U,S1 2014
 Intel Celeron G440,S1 2012
 Intel Core i7-2600K,S2 2010
 Intel Atom N570,S1 2011
-Intel Core i7-6560U,S1 2016
 Intel Xeon E5-2683 v3,S1 2015
+Intel Core i7-6560U,S1 2016
 Intel Core i7-840QM,S1 2010
 Intel Pentium G850,S1 2011
 Intel Core 2 Duo T7300,S2 2008
@@ -1182,8 +1182,8 @@ Intel Xeon E5-1607,S2 2016
 Intel Core i7-3517U,S1 2012
 Intel Core i7-7567U,S1 2017
 Intel Core i5-3380M,S1 2013
-AMD A8-3520M,S1 2012
 AMD Phenom X4 9550,S1 2008
+AMD A8-3520M,S1 2012
 Intel Core i3-4330,S1 2013
 AMD A4-1250,S1 2013
 Intel Core 2 Duo SU7300,S2 2009

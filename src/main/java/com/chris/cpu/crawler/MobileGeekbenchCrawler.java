@@ -24,14 +24,22 @@ public class MobileGeekbenchCrawler extends AbstractGeekbenchCrawler{
         for(WebElement cpu: allCPUs){
             String fullCPUName = cpu.findElement(By.xpath(".//td[1]/div[2]")).getText();
             if(fullCPUName.equals("")){  //There are some extra empty records, which I don't need
-                break;
+                continue;
             }
             if(fullCPUName.indexOf("@") == 0){
                 continue;
             }
             String shortCPUName = fullCPUName.substring(0, fullCPUName.indexOf("@") - 1);
             String cpuBenchscore = cpu.findElement(By.xpath(".//td[2]")).getText();
-            crawlResult.put(shortCPUName, cpuBenchscore);
+            if(crawlResult.containsKey(shortCPUName)){
+                int oldCpuBenchscoreInt = Integer.valueOf(crawlResult.get(shortCPUName));
+                int newCpuBenchscoreInt = Integer.valueOf(cpuBenchscore);
+                if(newCpuBenchscoreInt > oldCpuBenchscoreInt){
+                    crawlResult.put(shortCPUName, cpuBenchscore);
+                }
+            }else {
+                crawlResult.put(shortCPUName, cpuBenchscore);
+            }
         }
         return crawlResult;
     }

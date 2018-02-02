@@ -1,10 +1,6 @@
 package com.chris.cpu.processor;
 
-import com.chris.cpu.common.FileConstants;
 import com.chris.cpu.crawler.AbstractGeekbenchCrawler;
-import com.chris.cpu.crawler.DesktopGeekbenchCrawler;
-import com.chris.cpu.crawler.MobileGeekbenchCrawler;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.Map;
@@ -24,14 +20,6 @@ public class GeekbenchDataStorage {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args){
-        GeekbenchDataStorage gd = new GeekbenchDataStorage();
-        gd.storeData(FileConstants.GEEKBENCH_DESKTOP_MULTICORE_FILEPATH, new DesktopGeekbenchCrawler());
-
-    }
-
-
 
 
 }
