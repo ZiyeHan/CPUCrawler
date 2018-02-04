@@ -42,5 +42,4 @@ public class ReleaseDateDataStorage {
         return cpuNames;
     }
 
-
 }
