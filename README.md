@@ -1,5 +1,4 @@
 # CPUCrawler
-----------------------------------------------------
 ## Teacher's Requests
 
 Go to the geekbench website, and plot the “speedup” achieved every year in the results for geekbench 3.
@@ -10,11 +9,11 @@ If a semester has only slower results or no results, use the data from last seme
 
 The main plot is from 2006 to 2017, and the mobile (android) is from 2012 (not older data available).
 
-To find the CPU per Year, look at this:
+To find the CPU per Year, look at this: <br>
 https://browser.geekbench.com/processor-benchmarks
 https://browser.geekbench.com/android-benchmarks
 
-----------------------------------------------------
+
 ## Potential Problems
 Problem1:
 Getting the performance score is easy, but it is a little bit tricky to get the released date. <br>
@@ -22,7 +21,7 @@ Getting the performance score is easy, but it is a little bit tricky to get the 
 Problem2:
 There are too much data. Maybe we should use multi-thread crawler. Be careful about thread safe.
 
-----------------------------------------------------
+
 ## My Plan and Implement
 ### ( I was using geekbench 4 )
 
@@ -38,7 +37,7 @@ store the result in four different .csv files.
 
 Finally, visualize results based on .csv files.
 
-----------------------------------------------------
+
 ## Final Visualization
 
 Use javascript and web page instead of old-fashioned local java swing.
