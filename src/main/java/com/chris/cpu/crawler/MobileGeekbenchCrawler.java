@@ -20,7 +20,7 @@ public class MobileGeekbenchCrawler extends AbstractGeekbenchCrawler{
         crawlResult = new HashMap<String, String>();
         System.out.println("Crawling mobile geekbench...");
         chooseCore(driver, CoreEnum.MULTI_CORE); //Choose multi core
-        List<WebElement> allCPUs = driver.findElements(By.xpath("//*[@id=\"android\"]/tbody/tr"));
+        List<WebElement> allCPUs = driver.findElements(By.xpath(PageConstants.MOBILE_GEEKBENCH_CPUS_LOCATOR));
         for(WebElement cpu: allCPUs){
             String fullCPUName = cpu.findElement(By.xpath(".//td[1]/div[2]")).getText();
             if(fullCPUName.equals("")){  //There are some extra empty records, which I don't need

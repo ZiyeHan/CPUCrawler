@@ -18,7 +18,7 @@ public class DesktopGeekbenchCrawler extends AbstractGeekbenchCrawler {
         crawlResult = new HashMap<String, String>();
         System.out.println("Crawling desktop geekbench...");
         chooseCore(driver, CoreEnum.MULTI_CORE); //Choose multi core
-        List<WebElement> allCPUs = driver.findElements(By.xpath("//*[@id=\"pc\"]/tbody/tr"));
+        List<WebElement> allCPUs = driver.findElements(By.xpath(PageConstants.DESKTOP_GEEKBENCH_CPUS_LOCATOR));
         for(WebElement cpu: allCPUs){
             String cpuName = cpu.findElement(By.xpath(".//td[1]/a")).getText();
             String cpuBenchscore = cpu.findElement(By.xpath(".//td[2]")).getText();

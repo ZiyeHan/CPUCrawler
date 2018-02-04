@@ -16,4 +16,11 @@ public class FileConstants {
     public static final String RELEASE_DATE_MOBILE_MULTICORE_FILEPATH = "/Users/chris/Documents/UCSC/Classes/2nd Quarter/CMPE 202 Computer Architecture/HW1/CPUCrawler/CPUCrawler/Crawled Data/mobileMultiCoreReleaseDate.csv";
 
 
+    public static final String DESKTOP_BEST_SINGLECORE_PER_SEM = "/Users/chris/Documents/UCSC/Classes/2nd Quarter/CMPE 202 Computer Architecture/HW1/CPUCrawler/CPUCrawler/Crawled Data/desktopBestSingleCorePerSem.csv";
+    public static final String DESKTOP_BEST_MULTICORE_PER_SEM = "/Users/chris/Documents/UCSC/Classes/2nd Quarter/CMPE 202 Computer Architecture/HW1/CPUCrawler/CPUCrawler/Crawled Data/desktopBestMultiCorePerSem.csv";
+
+    public static final String MOBILE_BEST_SINGLECORE_PER_SEM = "/Users/chris/Documents/UCSC/Classes/2nd Quarter/CMPE 202 Computer Architecture/HW1/CPUCrawler/CPUCrawler/Crawled Data/mobileBestSingleCorePerSem.csv";
+    public static final String MOBILE_BEST_MULTICORE_PER_SEM = "/Users/chris/Documents/UCSC/Classes/2nd Quarter/CMPE 202 Computer Architecture/HW1/CPUCrawler/CPUCrawler/Crawled Data/mobileBestMultiCorePerSem.csv";
+
+
 }
