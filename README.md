@@ -9,8 +9,10 @@ If a semester has only slower results or no results, use the data from last seme
 
 The main plot is from 2006 to 2017, and the mobile (android) is from 2012 (not older data available).
 
-To find the CPU per Year, look at this: <br>
+To find the CPU per Year, look at this:
+<br>
 https://browser.geekbench.com/processor-benchmarks
+<br>
 https://browser.geekbench.com/android-benchmarks
 
 
