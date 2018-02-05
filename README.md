@@ -42,8 +42,13 @@ Finally, visualize results based on .csv files.
 
 ## Final Visualization
 
-Use javascript and web page instead of old-fashioned local java swing.
+I'm using d3.js to do the visualization. It has many useful APIs for drawing line charts.
 
+But before that, I need to convert those .csv score files to one .csv file suitable for d3.js. I wrote another java class to help me with this job.(See web/finalCSV.csv)
+
+After adding javascript codes to the html, the final plot chart looks like this: (See web/scorePlot.html)
+
+![Score Plot](https://github.com/ZiyeHan/CPUCrawler/tree/master/src/main/java/com/chris/cpu/web/scorePlot.png)
 
 
 <br>

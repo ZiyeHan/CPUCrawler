@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <title>CPU Score Plot</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <style>
+        body {
+            font: 12px Arial;
+        }
+
+        path {
+            stroke: steelblue;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: grey;
+            stroke-width: 1;
+            shape-rendering: crispEdges;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script>
+        var margin = {
+                top: 40,
+                right: 150,
+                bottom: 60,
+                left: 60
+            },
+            width = 900 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        var parseDate = d3.time.format("%m %Y").parse;
+
+        var x = d3.time.scale().range([0, width]);
+        var y = d3.scale.linear().range([height, 0]);
+
+        var xAxis = d3.svg.axis().scale(x)
+            .orient("bottom").ticks(10);
+
+        var yAxis = d3.svg.axis().scale(y)
+            .orient("left").ticks(10);
+
+        var valueline = d3.svg.line()
+            .x(function(d) {
+                return x(d.semester);
+            })
+            .y(function(d) {
+                return y(d.DesktopSingleCore);
+            });
+
+        var valueline2 = d3.svg.line()
+            .x(function(d) {
+                return x(d.semester);
+            })
+            .y(function(d) {
+                return y(d.DesktopMultiCore);
+            });
+        
+        var valueline3 = d3.svg.line()
+            .x(function(d) {
+                return x(d.semester);
+            })
+            .y(function(d) {
+                return y(d.MobileSingleCore);
+            });
+        
+        var valueline4 = d3.svg.line()
+            .x(function(d) {
+                return x(d.semester);
+            })
+            .y(function(d) {
+                return y(d.MobileMultiCore);
+            });
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // Get the data
+        d3.csv("finalCSV.csv", function(error, data) {
+            data.forEach(function(d) {
+                d.semester = parseDate(d.semester);
+                d.DesktopSingleCore = +d.DesktopSingleCore;
+                d.DesktopMultiCore = +d.DesktopMultiCore;
+                d.MobileSingleCore = +d.MobileSingleCore;
+                d.MobileMultiCore = +d.MobileMultiCore;
+            });
+
+            // Scale the range of the data
+            x.domain(d3.extent(data, function(d) {
+                return d.semester;
+            }));
+            y.domain([0, d3.max(data, function(d) {
+                return Math.max(d.DesktopSingleCore, d.DesktopMultiCore, d.MobileSingleCore, d.MobileMultiCore);
+            })]);
+
+            svg.append("path") // Add the valueline path.
+                .attr("class", "line")
+                .attr("d", valueline(data));
+
+            svg.append("path") // Add the valueline2 path.
+                .attr("class", "line")
+                .style("stroke", "red")
+                .attr("d", valueline2(data));
+            
+            svg.append("path") // Add the valueline3 path.
+                .attr("class", "line")
+                .style("stroke", "green")
+                .attr("d", valueline3(data));
+            
+            svg.append("path") // Add the valueline4 path.
+                .attr("class", "line")
+                .style("stroke", "orange")
+                .attr("d", valueline4(data));
+
+            svg.append("g") // Add the X Axis
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+
+            svg.append("g") // Add the Y Axis
+                .attr("class", "y axis")
+                .call(yAxis);
+
+            svg.append("text")
+                .attr("transform", "translate(" + (width + 3) + "," + y(data[21].DesktopSingleCore) + ")")
+                .attr("dy", ".35em")
+                .attr("text-anchor", "start")
+                .style("fill", "steelblue")
+                .text("DesktopSingleCore");
+            
+             svg.append("text")
+                .attr("transform", "translate(" + (width + 3) + "," + y(data[21].DesktopMultiCore) + ")")
+                .attr("dy", ".35em")
+                .attr("text-anchor", "start")
+                .style("fill", "red")
+                .text("DesktopMultiCore");
+            
+             svg.append("text")
+                .attr("transform", "translate(" + (width + 3) + "," + y(data[21].MobileSingleCore) + ")")
+                .attr("dy", ".35em")
+                .attr("text-anchor", "start")
+                .style("fill", "green")
+                .text("MobileSingleCore");
+            
+             svg.append("text")
+                .attr("transform", "translate(" + (width + 3) + "," + y(data[21].MobileMultiCore) + ")")
+                .attr("dy", ".35em")
+                .attr("text-anchor", "start")
+                .style("fill", "orange")
+                .text("MobileMultiCore");
+
+
+        });
+
+    </script>
+</body>

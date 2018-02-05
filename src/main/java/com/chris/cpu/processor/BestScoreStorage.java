@@ -1,10 +1,7 @@
 package com.chris.cpu.processor;
 
-import com.chris.cpu.common.FileConstants;
-
-import java.io.BufferedReader;
+import com.chris.cpu.util.FileUtil;
 import java.io.BufferedWriter;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,26 +24,10 @@ public class BestScoreStorage {
     }
 
     private HashMap<String, Integer> findBestScoreEachSemester(String scoreFilePath, String dateFilePath){
-        HashMap<String, String> scoreMap = getHashMapFromFile(scoreFilePath);
-        HashMap<String, String> dateMap = getHashMapFromFile(dateFilePath);
+        HashMap<String, String> scoreMap = FileUtil.getHashMapFromFile(scoreFilePath);
+        HashMap<String, String> dateMap = FileUtil.getHashMapFromFile(dateFilePath);
         HashMap<String, List<String>> cpusGroupBySem = groupCPUBySem(dateMap);
         return groupScoreBySem(cpusGroupBySem, scoreMap);
-    }
-
-
-    private HashMap<String, String> getHashMapFromFile(String csvFilePath){
-        HashMap<String, String> map = new HashMap<String, String>();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFilePath));
-            String line = null;
-            while ((line = bufferedReader.readLine()) != null) {
-                String benchInfo[] = line.split(",");
-                map.put(benchInfo[0], benchInfo[1]);
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return map;
     }
 
     private HashMap<String, List<String>> groupCPUBySem(HashMap<String, String> dateMap){
