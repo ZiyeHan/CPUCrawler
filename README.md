@@ -48,7 +48,7 @@ But before that, I need to convert those .csv score files to one .csv file suita
 
 After adding javascript codes to the html, the final plot chart looks like this: (See web/scorePlot.html)
 
-![Score Plot](https://github.com/ZiyeHan/CPUCrawler/tree/master/src/main/java/com/chris/cpu/web/scorePlot.png)
+![Score Plot](https://github.com/ZiyeHan/CPUCrawler/blob/master/src/main/java/com/chris/cpu/web/scorePlot.png)
 
 
 <br>
